@@ -74,9 +74,9 @@ ul.posts li {
   }
 }
 .theme-switch {
-  display: inline-block;
+  /*display: inline-block;*/
   height: 34px;
-  /*position: relative;*/
+  position: relative;
   width: 60px;
 }
 
