@@ -1,6 +1,20 @@
+/*Themeing*/
+html {
+    --bg: #ffffff;
+    --headings: #000000
+    --text: #000000;
+}
+html[data-theme='dark'] {
+    --bg: #000000;
+    --headings: #ffffff;
+    --text: #ffffff;
+}
+
+/*Appearance*/
 body {
     margin: 60px auto;
     width: 70%;
+	background-color: var(--bg); /*new*/
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -22,11 +36,13 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	color: var(--headings); /*new*/
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	color: var(--text); /*new*/
 }
 footer {
     border-top: 1px solid #d5d5d5;
