@@ -75,9 +75,9 @@ ul.posts li {
 }
 .theme-switch {
   display: inline-block;
-  height: 17px;
-  position: relative;
-  width: 30px;
+  height: 34px;
+  /*position: relative;*/
+  width: 60px;
 }
 
 .theme-switch input {
