@@ -7,11 +7,13 @@
 			<!-- link to various favicons -->
 			{% include favicons.html %}
 			{% include ga.html %}
+			<!-- dark mode switcher and javascript for persistency-->
 			<div class="theme-switch-wrapper">
+				<div style='float: right;'>
 				<label class="theme-switch" for="checkbox">
 				<input type="checkbox" id="checkbox" />
 				<div class="slider round"></div>
-				</label>
+				</label></div>
 				<em>Dark Mode</em>
 				<script type="text/javascript"> const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 					const currentTheme = localStorage.getItem('theme');
