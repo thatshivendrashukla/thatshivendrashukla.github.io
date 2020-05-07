@@ -9,14 +9,11 @@
 			{% include ga.html %}
 			<!-- dark mode switcher and javascript for persistency-->
 			<div class="theme-switch-wrapper">
-				<div style='position:absolute;
-							top:10px;
-							right: 10px;>
-				<label class="theme-switch" for="checkbox">
+								<label class="theme-switch" for="checkbox">
 				<input type="checkbox" id="checkbox" />
 				<div class="slider round"></div>
 				</label>
-				<p>Dark Mode</p></div>
+				<p>Dark Mode</p>
 				
 				<script type="text/javascript"> const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 					const currentTheme = localStorage.getItem('theme');
