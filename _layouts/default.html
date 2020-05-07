@@ -7,15 +7,17 @@
 			<!-- link to various favicons -->
 			{% include favicons.html %}
 			{% include ga.html %}
-			<!-- dark mode switcher and javascript for persistency-->
-	<style type="text/css">
 			
-   position:absolute;
-   top:0;
-   right:0;
-  
-  	
-				<div class="theme-switch-wrapper">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+					<li><a href="/photos">Photos</a></li>
+	        		<li><a href="/cv">CV</a></li>
+					<!-- dark mode switcher and javascript for persistency-->
+				<li><div class="theme-switch-wrapper">
 				<label class="theme-switch" for="checkbox">
 				<input type="checkbox" id="checkbox" />
 				<div class="slider round"></div>
@@ -45,17 +47,7 @@
 
 					toggleSwitch.addEventListener('change', switchTheme, false);
 				</script>
-				</div>
-		</style>
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-					<li><a href="/photos">Photos</a></li>
-	        		<li><a href="/cv">CV</a></li>
-					
+				</div></li>
 	    		</ul>
 			</nav>
 			<div class="container">
