@@ -17,12 +17,12 @@
 					<li><a href="/photos">Photos</a></li>
 	        		<li><a href="/cv">CV</a></li>
 					<!-- dark mode switcher and javascript for persistency-->
-				<li><div class="theme-switch-wrapper">
-				<label class="theme-switch" for="checkbox">
-				<input type="checkbox" id="checkbox" />
-				<div class="slider round"></div>
-				</label>
-				<p>Dark Mode</p>
+					<div class="theme-switch-wrapper">
+					<label class="theme-switch" for="checkbox">
+					<input type="checkbox" id="checkbox" />
+					<li><div class="slider round"></div><p>Dark Mode</p></li>
+					</label>
+				
 				
 				<script type="text/javascript"> const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 					const currentTheme = localStorage.getItem('theme');
@@ -47,7 +47,7 @@
 
 					toggleSwitch.addEventListener('change', switchTheme, false);
 				</script>
-				</div></li>
+					</div>
 	    		</ul>
 			</nav>
 			<div class="container">
