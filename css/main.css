@@ -66,6 +66,9 @@ ul.posts li {
 /*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
   display: flex;
+  
+
+  em {
     margin-left: 10px;
     font-size: 1rem;
   }
