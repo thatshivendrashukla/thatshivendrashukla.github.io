@@ -8,10 +8,12 @@
 			{% include favicons.html %}
 			{% include ga.html %}
 			<!-- dark mode switcher and javascript for persistency-->
-	<style>
-	div.a 	{
-	position: absolute;
-	right: 60px;
+	<style type="text/css">
+			{
+   position:absolute;
+   top:0;
+   right:0;
+  
   	
 				<div class="theme-switch-wrapper">
 				<label class="theme-switch" for="checkbox">
@@ -43,7 +45,7 @@
 
 					toggleSwitch.addEventListener('change', switchTheme, false);
 				</script>
-			</div>
+				</div>
 			} </style>
 		</head>
 		<body>
