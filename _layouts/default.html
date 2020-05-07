@@ -7,20 +7,6 @@
 			<!-- link to various favicons -->
 			{% include favicons.html %}
 			{% include ga.html %}
-			<!--themes-->
-			<style>
-body {
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-</style>
 		</head>
 		<body>
 			<nav>
@@ -29,14 +15,6 @@ body {
 		        	<li><a href="/about">About</a></li>
 					<li><a href="/photos">Photos</a></li>
 	        		<li><a href="/cv">CV</a></li>
-					<li><button onclick="myFunction()">Toggle dark mode</button></li>
-					<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
-	        		
 	    		</ul>
 			</nav>
 			<div class="container">
