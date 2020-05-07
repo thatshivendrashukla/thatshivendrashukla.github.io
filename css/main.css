@@ -66,15 +66,12 @@ ul.posts li {
 /*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
   display: flex;
-  
-
-  p {
     margin-left: 10px;
     font-size: 1rem;
   }
 }
 .theme-switch {
-  /*display: inline-block;*/
+  display: inline-block;
   height: 34px;
   position: relative;
   width: 60px;
