@@ -7,7 +7,13 @@
 			<!-- link to various favicons -->
 			{% include favicons.html %}
 			{% include ga.html %}
-			<div><script> const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+			<div class="theme-switch-wrapper">
+					<label class="theme-switch" for="checkbox">
+					<input type="checkbox" id="checkbox" />
+					<div class="slider round"></div>
+					</label>
+					<em>Dark Mode</em>
+					<script type="text/javascript"> const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
 
 if (currentTheme) {
@@ -29,7 +35,8 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
-</script></div>
+</script>
+			</div>
 		</head>
 		<body>
 			<nav>
@@ -38,13 +45,7 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 		        	<li><a href="/about">About</a></li>
 					<li><a href="/photos">Photos</a></li>
 	        		<li><a href="/cv">CV</a></li>
-					<li><div class="theme-switch-wrapper">
-					<label class="theme-switch" for="checkbox">
-					<input type="checkbox" id="checkbox" />
-					<div class="slider round"></div>
-					</label>
-					<em>Dark Mode</em>
-			</div></li>
+					
 	    		</ul>
 			</nav>
 			<div class="container">
