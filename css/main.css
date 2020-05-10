@@ -128,7 +128,7 @@ input:checked + .slider:before {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	grid-gap: 0px;
-	width:60%;
+	width:100%;
 	margin-left: auto;
 	margin-right: auto;
 	}
