@@ -40,15 +40,12 @@ a {
 a:hover {
     text-decoration: underline;
 }
-h1 {
+h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color);
-	font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-p {
+p, div {
     color: var(--primary-color);
-	font-size: 1.5em;
-    line-height: 1.4em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 footer {
