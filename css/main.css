@@ -49,6 +49,7 @@ p, div {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 footer {
+	margin-top:calc(5% + 60px);
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
@@ -117,3 +118,20 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/*Home*/
+
+.circle-avatar {
+  border-radius: 50%;
+}
+.block-group {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 0px;
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+.clear{
+	clear: both;
+	}
