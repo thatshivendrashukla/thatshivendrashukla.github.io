@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 p, em {
     color: var(--font-color);
     font-family: 'Nunito', sans-serif;
+	line-height: 1.5;
 }
 footer {
 	margin-top:calc(3% + 40px);
@@ -151,8 +152,9 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
 }
-.landing  p { line-height: 25px; }
-.landing  p.lead { line-height: 30px; }
+
+.landing  p.lead { line-height: 25px; }
+.landing  p { line-height: 20px; }
 
 .column {
   flex: 50%;
