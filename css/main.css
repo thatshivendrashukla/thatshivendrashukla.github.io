@@ -1,4 +1,4 @@
-/*Colors*/
+/*Color Scheme*/
 
 :root {
     --primary-color: #000000;
@@ -68,7 +68,7 @@ ul.posts li {
     list-style: none;
 }
 
-/*Toggle Switch*/
+/*Theme Toggle Switch*/
 
 .theme-switch-wrapper {
   display: flex;
