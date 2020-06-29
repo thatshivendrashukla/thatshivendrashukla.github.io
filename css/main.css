@@ -68,6 +68,18 @@ ul.posts li {
     list-style: none;
 }
 
+/* Blog Metadata Separator */
+
+.blog-meta {
+  display: inline-block;
+}
+.blog-meta:after {
+  content: '';
+  display: block;
+  border-top: 1px solid var(--secondary-color);
+  margin-top: 0.5em;
+}
+
 /*Theme Toggle Switch*/
 
 .theme-switch-wrapper {
@@ -124,7 +136,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/*Home*/
+/*Homepage Styles*/
 
 .circle-avatar {
   border-radius: 50%;
@@ -155,7 +167,7 @@ input:checked + .slider:before {
   position: relative;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) /*Changes column widths on smaller screens*/ {
   .column {
     flex: 100%;
     max-width: 100%;
