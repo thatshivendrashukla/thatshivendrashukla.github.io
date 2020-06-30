@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
 
-<p class="blog-meta">{{ page.date | date_to_long_string: "ordinal" }}</p>
+
+<a href="/publications" style="display: flex-box; position: relative; float: right; margin-bottom: auto;">Back to post list</a> <br>
+
+<h1 style="font-size: 3em; margin-bottom: 0;">{{ page.title }}</h1>
+
+<p class="blog-meta" style="margin-top: 0">{{ page.date | date_to_long_string: "ordinal" }}</p>
 
 <div class="post">
   {{ content }}
