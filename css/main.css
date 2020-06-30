@@ -109,7 +109,7 @@ ul.posts li {
 }
 
 @media screen and ( max-width: 500px ) {
-	.theme-switch {width: 44px;}
+	.theme-switch {width: 30px;} /* 44px if not hiding text label */
 }
 
 .theme-switch input {
