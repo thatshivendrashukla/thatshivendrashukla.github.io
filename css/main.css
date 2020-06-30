@@ -54,6 +54,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
+	font-family: 'Roboto', sans-serif;
     color: var(--accent-color);
 }
 a:hover {
@@ -63,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--heading-color);
     font-family: 'Roboto', sans-serif;
 }
-p, em {
+p, em, span {
     color: var(--font-color);
     font-family: 'Nunito', sans-serif;
 	line-height: 1.5;
@@ -77,8 +78,9 @@ footer {
   display: flex;
   position: relative;
   float: right;
+  font-size: 0.9em;
 }
-
+/* might not be needed
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
@@ -87,7 +89,7 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-
+*/
 .blog-meta {
   color: var(--secondary-font-color);
   font-weight: bold;
@@ -162,7 +164,7 @@ input:checked + .slider:before {
   display: block;
   width: 80%;
   min-width: 200px;
-  max-width: 300px; /*actual image width is 400px*/
+  max-width: 320px; /*actual image width is 400px*/
   height: auto; /* maintain aspect ratio*/
   margin: auto; /*centering of image*/
   justify-content: space-around;
@@ -182,13 +184,13 @@ input:checked + .slider:before {
 
 .column {
   flex: 50%;
+  min-width: 50%;
   max-width: 50%;
-  min-width: 40ch;
   margin: auto;
   position: relative;
 }
-
-@media screen and (max-width: 500px) {
+/* On screens that are 400px wide or less, make the columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
