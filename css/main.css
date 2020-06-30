@@ -23,10 +23,29 @@ body {
 	margin: 60px auto;
     width: 70%;
 }
-nav ul, footer ul {
-    font-family: 'Roboto', sans-serif;
-    padding: 0px;
-    list-style: none;
+@media screen and ( min-width: 500px ) {
+	nav ul {
+		font-family: 'Roboto', sans-serif;
+		padding: 0;
+		list-style: none;
+		font-weight: bold;
+	}
+}
+@media screen and ( max-width: 500px ) {
+	nav ul {
+		display: flex;
+		font-family: 'Roboto', sans-serif;
+		margin:0;
+		padding: 0;
+		list-style: none;
+		font-weight: bold;
+		justify-content: space-around;
+	}
+}
+footer ul {
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	list-style: none;
     font-weight: bold;
 }
 nav ul li, footer ul li {
@@ -138,10 +157,11 @@ input:checked + .slider:before {
   /*box-shadow: 0.5px 0.5px 1px var(--secondary-font-color);*/
   display: block;
   width: 80%;
-  min-width: 100px;
-  max-width: 200px; /*actual image width*/
+  min-width: 200px;
+  max-width: 300px; /*actual image width is 400px*/
   height: auto; /* maintain aspect ratio*/
   margin: auto; /*centering of image*/
+  justify-content: space-around;
 }
 .landing {
   display: flex;
@@ -150,7 +170,7 @@ input:checked + .slider:before {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .landing  p.lead { line-height: 25px; }
@@ -159,11 +179,12 @@ input:checked + .slider:before {
 .column {
   flex: 50%;
   max-width: 50%;
+  min-width: 40ch;
   margin: auto;
   position: relative;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .column {
     flex: 100%;
     max-width: 100%;
