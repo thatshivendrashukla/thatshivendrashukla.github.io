@@ -25,6 +25,11 @@ body {
 	margin: 60px auto;
     width: 70%;
 }
+
+@media only screen and (max-width: 600px) {
+	body{ width: 86%; }
+}
+
 @media screen and ( min-width: 500px ) {
 	nav ul {
 		font-family: 'Roboto', sans-serif;
@@ -191,6 +196,7 @@ input:checked + .slider:before {
 
 .column {
   flex: 50%;
+  min-width: 40ch;
   max-width: 50%;
   margin: auto;
   position: relative;
