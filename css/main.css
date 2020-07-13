@@ -191,7 +191,7 @@ input:checked + .slider:before {
   justify-content: space-around;
 }
 
-.landing  p.lead { line-height: 25px; }
+.landing  p.lead { line-height: 25px; font-weight: bold; }
 .landing  p { line-height: 20px; }
 
 .column {
