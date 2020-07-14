@@ -1,1 +1,1 @@
-Click [**Here**](https://thatshivendrashukla.github.io).
+Click [**here**](https://shivendrashukla.com) to visit.
