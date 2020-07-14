@@ -1,18 +1,18 @@
 /*Color Scheme*/
 
 :root {
-    --accent-color: rgba(0, 153, 255, 1) ; /*#0099ff with solid opacity*/
+    --bg-color: #rgba(255, 255, 255, 1); /*solid white #ffffff*/
+	--accent-color: rgba(0, 153, 255, 1) ; /*#0099ff with solid opacity*/
     --heading-color: rgba(0, 0, 0, 1); /*#000000 with solid opacity*/
 	--font-color: rgba(0, 0, 0, 1); /*#000000 with solid opacity*/
 	--secondary-font-color: rgba(92, 92, 92, 0.8); /*#5c5c5c at 80% opacity*/
-    --bg-color: #rgba(255, 255, 255, 1); /*solid white #ffffff*/
 }
 [data-theme="dark"] {
-    --accent-color: rgba(95, 184, 255); /*#5fb8ff, #0099ff equivalent with a tonal value of 300*/ 
+    --bg-color: rgba(18, 18, 18, 1); /*#121212 with solid opacity*/
+	--accent-color: rgba(95, 184, 255); /*#5fb8ff, #0099ff equivalent with a tonal value of 300*/ 
     --heading-color: rgba(255, 255, 255, 0.9); /*#ffffff with 90% opacity*/
 	--font-color: rgba(255, 255, 255, 0.87); /*#ffffff with 87% opacity*/
     --secondary-font-color: rgba(219, 219, 219, 0.87); /*#dbdbdb, #5c5c5c equivalent with a tonal value of 300 at 87% opacity*/
-	--bg-color: rgba(18, 18, 18, 1); /*#121212 with solid opacity*/
 }
 
 /*General Appearance*/
@@ -177,8 +177,8 @@ input:checked + .slider:before {
   width: 80%;
   min-width: 200px;
   max-width: 320px; /*actual image width is 400px*/
-  height: auto; /* maintain aspect ratio*/
-  margin: auto; /*centering of image*/
+  height: auto;
+  margin: auto;
   justify-content: space-around;
 }
 .landing {
