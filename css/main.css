@@ -238,7 +238,7 @@ input:checked + .slider:before {
 }
 .xpavatar {
   display: block;
-  width: 80%;
+  /* width: 80%; */
   min-width: 25px;
   max-width: 100px; /* actual image width is 100px */
   height: auto;
