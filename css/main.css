@@ -209,13 +209,56 @@ input:checked + .slider:before {
   }
 }
 
+
+
+/*About*/
+
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 600px) {
+	.experience { 
+		width: 100%;
+	}
+}
+.experience  em.lead { font-size: 0.85rem; }
+.experience  p { line-height: 1rem; }
+
+.xpcol {
+  flex: 50%;
+  min-width: 1ch;
+  margin: auto;
+  position: relative;
+}
+.xpavatar {
+  display: block;
+  width: 80%;
+  min-width: 25px;
+  max-width: 100px; /* actual image width is 100px */
+  height: auto;
+  margin: auto;
+  justify-content: space-around;
+}
+
 /*404*/
+
 .error404 {
   display: flex;
   flex-wrap: wrap;
-  width: 40%;
+  width: 70%;
   padding-top: 60px;
   margin: auto;
   align-items: center;
   justify-content: center;
+}
+.error404  h1 {font-size: 5.5em; text-align: center; line-height: 0.8rem;}
+
+@media only screen and (max-width: 600px) {
+	.error404  h1 {font-size: 3.5em; text-align: justify; line-height: 1em;}
 }
