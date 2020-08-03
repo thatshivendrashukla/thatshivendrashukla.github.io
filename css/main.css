@@ -59,9 +59,14 @@ nav ul li, footer ul li {
     display: inline-block;
     margin-right: 20px;
 }
-a {
+nav a {
     text-decoration: none;
 	font-family: 'Roboto', sans-serif;
+    color: var(--accent-color);
+}
+a {
+    text-decoration: none;
+	font-family: 'Nunito', sans-serif;
     color: var(--accent-color);
 }
 a:hover {
@@ -238,7 +243,6 @@ input:checked + .slider:before {
 }
 .xpavatar {
   display: block;
-  /* width: 80%; */
   min-width: 25px;
   max-width: 100px; /* actual image width is 100px */
   height: auto;
