@@ -59,7 +59,7 @@ nav ul li, footer ul li {
     display: inline-block;
     margin-right: 20px;
 }
-nav a {
+nav a, footer a {
     text-decoration: none;
 	font-family: 'Roboto', sans-serif;
     color: var(--accent-color);
@@ -232,7 +232,7 @@ input:checked + .slider:before {
 		width: 100%;
 	}
 }
-.experience  em.lead { font-size: 0.85rem; }
+.experience  p.lead { font-size: 0.85rem;  }
 .experience  p { line-height: 1rem; }
 
 .xpcol {
