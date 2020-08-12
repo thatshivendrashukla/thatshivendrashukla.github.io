@@ -7,6 +7,6 @@ description: Shivendra Shukla's publications and research articles
 	<ul class="posts">
 
 	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><p style="margin-top:0; font-size: 0.95rem; margin-bottom:0;">{{ post.date | date_to_long_string: "ordinal" }}</p><hr></li>
 	  {% endfor %}
 	</ul>

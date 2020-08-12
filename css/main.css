@@ -97,16 +97,20 @@ footer {
   font-size: 0.99em;
   line-height: 1.25;
 }
-/* might not be needed
+
 ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+    margin: 20px auto 40px;
 }
 
 ul.posts li {
     list-style: none;
 }
-*/
+
+ul.posts a {
+	font-weight: 900;
+	font-size: 1.65rem;
+	margin-bottom:0;
+}
 .blog-meta {
   color: var(--secondary-font-color);
   font-weight: bold;
@@ -232,8 +236,9 @@ input:checked + .slider:before {
 		width: 100%;
 	}
 }
-.experience  p.lead { font-size: 0.85rem;  }
-.experience  p { line-height: 1rem; }
+.experience  b.title {color: var(--heading-color); font-family: 'Roboto', sans-serif; font-size: 1.25rem; margin-bottom: 0;}
+.experience  p.lead { font-size: 0.95rem; }
+.experience  p { line-height: 1rem; margin-top: 0;}
 
 .xpcol {
   flex: 50%;
