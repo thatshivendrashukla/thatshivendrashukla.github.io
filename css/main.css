@@ -240,12 +240,20 @@ input:checked + .slider:before {
 .experience  p.lead { font-size: 0.95rem; }
 .experience  p { line-height: 1rem; margin-top: 0;}
 
-.xpcol {
-  flex: 50%;
+.xpcol:nth-of-type(1) {
+  flex: 70%;
   min-width: 1ch;
   margin: auto;
   position: relative;
 }
+
+.xpcol:nth-of-type(2) {
+  flex: 30%;
+  min-width: 1ch;
+  margin: auto;
+  position: relative;
+}
+
 .xpavatar {
   display: block;
   min-width: 25px;
