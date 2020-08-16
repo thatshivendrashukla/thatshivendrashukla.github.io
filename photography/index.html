@@ -1,9 +1,43 @@
 ---
-layout: default
+layout: photo
 title: Photography | Shivendra Shukla
-description: The photography portfolio of Shivendra Shukla
+description: Photographs taken by Shivendra Shukla
 ---
-<div class="blurb">
-<h1 style="text-align: center; font-size:5rem;">Under Construction</h1>
-<p>Meanwhile you could take a look at my Instagram, <a href="https://instagram.com/shivendra_shukla">@shivendra_shukla</a>.</p>
+<div class= photography">
+<div class="carousel">
+	<div class= "carousel-contents">
+		<button class="carousel-button-left is-hidden">
+			<img src="/assets/img/left.svg" alt="Previous">
+		</button>
+		<div class="carousel-track-container">
+			<ul class="carousel-track">
+				<li class="carousel-slide current-slide">
+					<img class="carousel-image" src="/assets/img/photos/carousel/carousel1.jpg" alt="">
+				</li>
+				<li class="carousel-slide">
+					<img class="carousel-image" src="/assets/img/photos/carousel/carousel2.jpg" alt="">
+				</li>
+				<li class="carousel-slide">
+					<img class="carousel-image" src="/assets/img/photos/carousel/carousel3.jpg" alt="">
+				</li>
+				<li class="carousel-slide">
+					<img class="carousel-image" src="/assets/img/photos/carousel/carousel4.jpg" alt="">
+				</li>
+			</ul>
+		</div>
+		<button class="carousel-button-right">
+			<img src="/assets/img/right.svg" alt="Next">
+		</button>
+	</div>
+	
+	<div class="carousel-nav">
+		<button class="carousel-indicator current-slide"></button>
+		<button class="carousel-indicator"></button>
+		<button class="carousel-indicator"></button>
+		<button class="carousel-indicator"></button>
+	</div>
 </div>
+
+</div>
+
+<script src="/js/carousel.js"></script>

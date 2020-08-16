@@ -18,13 +18,20 @@
 /*General Appearance*/
 html {
 	scroll-behavior: smooth;
+	height: 100%;
 }
 body {
     background-color: var(--bg-color);
     color: var(--font-color);
 	margin: 60px auto;
     width: 70%;
+	
+	min-height: 100%;
+	
+	display:flex;
+	flex-direction: column;
 }
+
 html, body{
 	text-rendering: optimizeLegibility;  
     text-shadow: 0px 0px 1px rgba(255, 255, 255, .1);
@@ -89,7 +96,8 @@ p, em, span {
 	margin-top: calc(3% + 40px);
 }
 footer {
-	margin-top:calc(3% + 40px);
+	/*margin-top:calc(3% + 40px);*/
+	margin-top: auto;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
@@ -155,7 +163,6 @@ ul.posts p {
   font-weight: bold;
   margin-top: 0;
 }
-
 
 /*Theme Toggle Switch*/
 
@@ -261,6 +268,7 @@ input:checked + .slider:before {
 }
 
 
+
 /*About*/
 
 .experience {
@@ -306,6 +314,95 @@ input:checked + .slider:before {
 
 /*Photos*/
 
+.carousel {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: none;
+	
+}
+
+.carousel-contents {
+	position: relative;
+	height: calc(50vh);
+	width: 80%;
+	margin: 0 auto;	
+}
+.carousel-image {
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+}
+.carousel-track-container {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel-track{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	height: 100%;
+	transition: transform 250ms ease-in;
+}
+
+.carousel-slide{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+.carousel-slide img {
+   pointer-effects: none;
+}
+
+.carousel-button-left img, .carousel-button-right img{
+	width: 25px;
+	-webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+    filter: invert(100%);
+}
+.carousel-button-left {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: transparent;
+	border: 0;
+	left: -55px;
+	cursor: pointer;
+}
+.carousel-button-right {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: transparent;
+	border: 0;
+	right: -55px;
+	cursor: pointer;
+}
+
+.carousel-nav {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+}
+.carousel-indicator {
+	border: 0;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	background: var(--secondary-font-color);
+	opacity: 0.4;
+	margin: 0 8px;
+	cursor: pointer;
+}
+.carousel-indicator.current-slide {
+	background: var(--accent-color);
+	opacity: 0.7;
+}
+
+.is-hidden { display: none; }
 
 /*404*/
 
