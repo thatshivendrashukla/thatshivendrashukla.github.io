@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-	<html lang="en">
-{% include head.html %}
-		<body>
-			<nav>
-		
-				<ul>
-	        		<li><a href="/">Home</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/publications">Articles</a></li>
-					<li><a href="/photography">Photos</a></li>  
-					<div class="theme-switch-wrapper"><label class="theme-switch" for="checkbox" aria-label="toggle dark mode"><input type="checkbox" id="checkbox" /><span class="slider round"></span></label><!--<span style="margin-left: 10px; font-family: 'Roboto', sans-serif; line-height: 115%">Dark Mode</span>-->{% include darkmode.html %}</div>					
-	    		</ul>
-			</nav>
-			<div class="head-space"></div>
-			<div class="container">
-					
-					<div class="photos-container">
-					  {{ content }}
-					  <div class="head-space"></div>
-					</div>
-			
-			</div><!-- /.container -->
-		{% include footer.html %}
-		</body>
-	</html>
+---
+layout: default
+---
 
-
-
+<div class="photos-container">
+		{{ content }}
+		<div class="head-space"></div>
+</div>
