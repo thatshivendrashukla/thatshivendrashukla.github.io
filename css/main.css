@@ -355,7 +355,7 @@ input:checked + .slider:before {
 	width: 100%;
 }
 .carousel-slide img {
-   pointer-effects: none;
+   pointer-events: none;
 }
 
 .carousel-button-left img, .carousel-button-right img{
