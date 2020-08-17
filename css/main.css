@@ -17,6 +17,7 @@
 
 /*General Appearance*/
 html {
+	background: var(--bg-color);
 	scroll-behavior: smooth;
 	height: 100%;
 }

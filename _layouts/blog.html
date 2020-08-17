@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<a href="/blog" style="display: flex-box; position: relative; float: right; margin-bottom: auto;">Back to post list</a> <br>
+<a href="/publications" style="display: flex-box; position: relative; float: right; margin-bottom: auto;">Back to post list</a> <br>
 
 <h1 class="blog-title">{{ page.title }}</h1>
 
@@ -14,7 +14,7 @@ layout: default
     {% assign categories = page.categories %}
   {% endif %}
   {% for category in categories %}
-  <p>Tags: <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a></p>
+  <p>Tags: <a href="{{site.baseurl}}blog/categories/#{{category|slugize}}">{{category}}</a></p>
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
 </div>
