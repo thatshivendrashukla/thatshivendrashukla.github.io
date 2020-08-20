@@ -16,7 +16,7 @@ description: List of posts arranged by category
     <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
-      <ul style="margin-top:0;"><li style="margin-left: 20px;"><h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4></li></ul>
+      <ul style="margin-top:0;"><li style="margin-left: 20px;"><h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} ({{post.date | date: "%Y"}})</a></h4></li></ul>
     </article>
     {% endfor %}
   </div>
