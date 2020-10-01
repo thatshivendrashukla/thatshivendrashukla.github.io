@@ -1,9 +1,0 @@
-/*Light Mode Color Scheme*/
-
-:root {
-  --bg-color: #rgba(255, 255, 255, 1); /*solid white #ffffff*/
-  --accent-color: rgba(0, 153, 255, 1); /*#0099ff with solid opacity*/
-  --heading-color: rgba(0, 0, 0, 1); /*#000000 with solid opacity*/
-  --font-color: rgba(0, 0, 0, 1); /*#000000 with solid opacity*/
-  --secondary-font-color: rgba(92, 92, 92, 0.8); /*#5c5c5c at 80% opacity*/
-}

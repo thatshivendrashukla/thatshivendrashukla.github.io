@@ -1,54 +1,23 @@
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="{{ page.description }}" />
-	<meta name="author" content="Shivendra Shukla" />
-  
-	<title>{{ page.title }}</title>
-  
-	<!-- link to fonts -->
-	<link
-	  href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400&family=Roboto:wght@400;500;700;900&display=swap"
-	  rel="stylesheet"
-	/>
-  
-	<script>
-	  // If `prefers-color-scheme` is not supported, fall back to light mode.
-	  // In this case, light.css will be downloaded with `highest` priority.
-	  if (window.matchMedia("(prefers-color-scheme: dark)").media === "not all") {
-		document.documentElement.style.display = "none";
-		document.head.insertAdjacentHTML(
-		  "beforeend",
-		  '<link rel="stylesheet" href="/css/light.css" onload="document.documentElement.style.display = \'\'">'
-		);
-	  }
-	</script>
-	<!--
-		Conditionally either load the light or the dark stylesheet. The matching file
-		will be downloaded with `highest`, the non-matching file with `lowest`
-		priority. If the browser doesn't support `prefers-color-scheme`, the media
-		query is unknown and the files are downloaded with `lowest` priority (but
-		above I already force `highest` priority for my default light experience).
-	  -->
-	<link
-	  id="dark"
-	  rel="stylesheet"
-	  type="text/css"
-	  href="/css/dark.css"
-	  media="(prefers-color-scheme: dark)"
-	/>
-	<link
-	  id="light"
-	  rel="stylesheet"
-	  type="text/css"
-	  href="/css/light.css"
-	  media="(prefers-color-scheme: light)"
-	/>
-	<!-- link to main stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/css/main.css" />
-	<!-- favicons-->
-	{% include favicons.html %}
-	<!--google analytics tracking code-->
-	{% include analytics.html %}
-  </head>
-  
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta charset="utf-8" />
+
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="author" content="Shivendra Shukla" />
+
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <!-- Import Fonts -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400&family=Roboto:wght@400;500;700;900&display=swap"
+  />
+  <!-- Favicons -->
+  {% include favicons.html %}
+  <!-- Analytics -->
+  {% include analytics.html %}
+</head>

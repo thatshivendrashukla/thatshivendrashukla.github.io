@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en-US' }}">
   {% include head.html %}
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blog">Articles</a></li>
-        <li><a href="/photography">Photos</a></li>
-        <div class="theme-switch-wrapper">
-          <label
-            class="theme-switch"
-            for="checkbox"
-            aria-label="toggle dark mode"
-            ><input type="checkbox" id="checkbox" /><span
-              class="slider round"
-            ></span
-          ></label>
-        </div>
-      </ul>
-    </nav>
-    <div class="head-space"></div>
-    <div class="container">
-      {{ content }}
+    <div class="container" id="bodyContainer">
+      <div class="head-space-nav"></div>
+      {% include navbar.html %}
+
+      <!-- Begin page content -->
+      <main role="main">
+        <div class="container">{{ content }}</div>
+      </main>
     </div>
-    <!-- /.container -->
-    {% include footer.html %}
-    <script src="/js/global.js"></script>
+    <!-- Close Body container -->
+    <footer class="footer">
+      <div class="container" id="footerContainer">
+        {% include footer.html %}
+      </div>
+    </footer>
+    {% include javascript.html %}
   </body>
 </html>

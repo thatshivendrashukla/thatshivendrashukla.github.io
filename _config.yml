@@ -1,8 +1,7 @@
-name: Shivendra Shukla
+title: "Shivendra Shukla" # the name of your site, e.g. ACME Corp.
 markdown: kramdown
+url: "https://shivendrashukla.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-defaults:
-  - scope:
-      path: "assets/img/"
-    values:
-      image: true
+sass:
+  sass_dir: assets/css
+  style: compressed
