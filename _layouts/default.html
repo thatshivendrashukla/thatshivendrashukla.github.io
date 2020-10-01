@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  {% include head.html %}
+  <body>
+    <div class="container" id="bodyContainer">
+      <div class="head-space-nav"></div>
+      {% include navbar.html %}
+
+      <!-- Begin page content -->
+      <main role="main">
+        <div class="container">{{ content }}</div>
+      </main>
+    </div>
+    <!-- Close Body container -->
+    <footer class="footer">
+      <div class="container" id="footerContainer">
+        {% include footer.html %}
+      </div>
+    </footer>
+    {% include javascript.html %}
+  </body>
+</html>
